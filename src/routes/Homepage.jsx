@@ -11,7 +11,7 @@ const Homepage = () => {
       <div className='flex gap-4'>
         <Link to='/'>Home</Link>
         <span>{'>'}</span>
-        <span className='text-myblue'>Blogs and Articles</span>
+        <span className='text-myblue'>Blogs & Articles</span>
       </div>
       {/*Intro*/}
       <div className='flex flex-col md:flex-row flex-wrap items-start md:items-center justify-between'>
