@@ -58,7 +58,7 @@ const Write = () => {
   }
 
   return (
-    <div className='h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6'>
+    <div className='h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6 duration-200'>
       <h1 className='text-2xl flex justify-center text-gray-600'>Create a new post</h1>
       <form onSubmit={handleSubmit} className='flex flex-col flex-1 mb-8 gap-6'>
         <input name='title' type="text" placeholder='Write your post title here...' className='bg-transparent text-4xl p-2 outline-none font-semibold' />

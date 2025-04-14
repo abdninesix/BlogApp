@@ -6,7 +6,7 @@ import PostList from '../components/PostList'
 
 const Homepage = () => {
   return (
-    <div className='mt-4 flex flex-col gap-5'>
+    <div className='mt-4 flex flex-col gap-5 duration-200'>
       {/*Breadcrumb*/}
       <div className='flex gap-4'>
         <Link to='/'>Home</Link>
