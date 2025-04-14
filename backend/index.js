@@ -9,14 +9,14 @@ import cors from 'cors'
 
 const app = express()
 
+connectDB()
+
+app.get('/', (req, res)=>{res.send("Blog app server")})
+
 app.use(cors(process.env.CLIENT_URL))
-
 app.use(clerkMiddleware())
-
 app.use("/webhooks", webhookRouter) //we wrote this before express.json because webhooks is already using body-parser which will cause conflict 
-
 app.use(express.json()) //we use this to create a post and convert it into a json document for mongodb
-
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", 
