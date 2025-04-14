@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='w-full h-16 md:h-20 flex sticky top-0 z-10 bg-[#e6e6ff] opacity-90 items-center justify-between'>
             {/*Logo*/}
             <Link to='/' className='flex items-center gap-4 text-2xl font-bold group'>
-                <Image src='/' alt='logo' w={32} h={32} />
+                <Image src='/favicon.svg' alt='logo' w={32} h={32} />
                 <span className='flex flex-row'>BLOG</span>
             </Link>
             {/*Mobile menu*/}
