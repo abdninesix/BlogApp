@@ -23,7 +23,7 @@ const Navbar = () => {
             {/*Mobile menu*/}
             <div className='md:hidden z-10'>
                 <div className='cursor-pointer text-4xl' onClick={() => setOpen((prev) => (!prev))}>{open ? "X" : "☰"}</div>
-                <div className={`absolute top-60 p-10 rounded-[30px] bg-myblue text-white flex flex-col gap-8 font-medium text-lg items-center justify-center ${open ? "left-[25%]" : "hidden"}`}>
+                <div className={`absolute h-96 w-72 top-60 left-12 p-10 rounded-[30px] bg-myblue text-white flex flex-col gap-8 font-medium text-2xl items-center justify-center ${open ? "left-[25%]" : "hidden"}`}>
                     <Link to='/'>Home</Link>
                     <Link to='/'>Trending</Link>
                     <Link to='/'>Most popular</Link>

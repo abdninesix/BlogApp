@@ -29,10 +29,10 @@ const SinglePostPage = () => {
   return (
     <div className="flex flex-col gap-8 duration-200">
       {/* detail */}
-      <div className="flex mt-5 gap-6 p-4 rounded-3xl shadow-md">
+      <div className="flex flex-col-reverse md:flex-row mt-5 gap-6 p-4 rounded-3xl shadow-md">
         <div className="lg:w-3/5 flex flex-col gap-5">
           <h1 className="text-xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold">{data.title}</h1>
-          <div className="flex items-center gap-2 text-gray-500 text-sm">
+          <div className="flex flex-wrap items-center gap-2 text-gray-500 text-sm">
             <span>Written by</span>
             <Link to={`/posts?author=${data.user.username}`} className="text-myblue">{data.user.username}</Link>
             <span>on</span>
@@ -42,7 +42,8 @@ const SinglePostPage = () => {
           <p className="text-gray-500 font-medium">{data.desc}</p>
         </div>
 
-        {data.img && (<div className="hidden lg:block w-2/5">
+        {data.img && (
+          <div className="w-">
           <Image src={data.img} w="600" className="rounded-2xl" />
         </div>)}
       </div>

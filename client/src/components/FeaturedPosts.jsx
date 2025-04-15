@@ -44,7 +44,7 @@ const FeaturedPosts = () => {
           </div>
 
           <div className='w-2/3'>
-            <div className='flex items-center gap-4 text-sm lg:text-base mb-4'>
+            <div className='flex flex-wrap items-center gap-2 text-sm lg:text-base mb-4'>
               <h1 className='font-semibold lg:text-lg'>02.</h1>
               <Link to='web-design' className='text-myblue lg:text-lg'>{posts[1].category}</Link>
               <span className='text-gray-500'>{format(posts[1].createdAt)}</span>
@@ -59,7 +59,7 @@ const FeaturedPosts = () => {
           </div>
 
           <div className='w-2/3'>
-            <div className='flex items-center gap-4 text-sm lg:text-base mb-4'>
+            <div className='flex flex-wrap items-center gap-2 text-sm lg:text-base mb-4'>
               <h1 className='font-semibold lg:text-lg'>03.</h1>
               <Link to='web-design' className='text-myblue lg:text-lg'>{posts[2].category}</Link>
               <span className='text-gray-500'>{format(posts[2].createdAt)}</span>
@@ -74,7 +74,7 @@ const FeaturedPosts = () => {
           </div>
 
           <div className='w-2/3'>
-            <div className='flex items-center gap-4 text-sm lg:text-base mb-4'>
+            <div className='flex flex-wrap items-center gap-2 text-sm lg:text-base mb-4'>
               <h1 className='font-semibold lg:text-lg'>04.</h1>
               <Link to='web-design' className='text-myblue lg:text-lg'>{posts[3].category}</Link>
               <span className='text-gray-500'>{format(posts[3].createdAt)}</span>
