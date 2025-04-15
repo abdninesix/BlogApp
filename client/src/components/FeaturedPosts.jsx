@@ -27,7 +27,7 @@ const FeaturedPosts = () => {
     <div className='mt-8 flex flex-col lg:flex-row gap-8'>
       {/*First post*/}
       <div className='flex flex-col gap-4 w-full lg:w-1/2'>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-2'>
           <h1 className='font-semibold lg:text-lg'>01.</h1>
           <Link to='web-design' className='text-myblue lg:text-lg'>{posts[0].category}</Link>
           <span className='text-gray-500'>{format(posts[0].createdAt)}</span>
