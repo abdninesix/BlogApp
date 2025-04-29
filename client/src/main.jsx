@@ -9,6 +9,7 @@ import SinglePostPage from './routes/SinglePostPage.jsx'
 import Write from './routes/Write.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import RegisterPage from './routes/RegisterPage.jsx'
+import About from './routes/About.jsx'
 import { ClerkProvider } from '@clerk/clerk-react';
 import {
   QueryClient,
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
