@@ -21,11 +21,11 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div className='w-full h-16 md:h-20 flex sticky top-0 z-10 backdrop-blur-md items-center justify-between'>
+        <div className='w-full h-16 md:h-20 px-2 flex sticky top-0 z-10 backdrop-blur-md items-center justify-between'>
             {/*Logo*/}
             <Link to='/' className='flex items-center gap-4 text-2xl font-bold group'>
                 <Image src='/favicon.svg' alt='logo' w={32} h={32} />
-                <span className='flex flex-row'>BLOG</span>
+                <span className='flex flex-row text-gray-600'>BLOG</span>
             </Link>
             {/*Mobile menu*/}
             <div className='md:hidden'>
