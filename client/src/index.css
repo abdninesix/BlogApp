@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-    background-color: #e6e6ff;
+    background-color: #f0f0fd;
+    transition: background-color 0.2s ease, color 0.2s ease;
     width: 100vw;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
@@ -18,3 +19,14 @@ body {
 .ql-editor {
     border: none !important;
 }
+
+html.dark body {
+    background-color: #11111f; /* Dark background */
+    color: white; /* White text in dark mode */
+  }
+  
+  /* You can customize other dark mode styles here */
+  html.dark {
+    /* Example: Dark Mode-specific text color or other settings */
+    color-scheme: dark;
+  }

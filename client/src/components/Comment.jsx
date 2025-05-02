@@ -27,14 +27,14 @@ const Comment = ({ comment, postId }) => {
   })
 
   return (
-    <div className='bg-slate-100 p-4 rounded-xl'>
+    <div className='bg-slate-100 dark:bg-slate-950 p-4 rounded-xl'>
 
       <div className='flex items-center justify-between'>
 
         <div className='flex items-center gap-4'>
           {comment.user.img ? (<img src={comment.user.img} className='w-10 h-10 rounded-full object-cover' />) : (<div className='w-10 h-10 rounded-full shadow-lg' />)}
           <span className='font-medium'>{comment.user.username}</span>
-          <span className='text-gray-500 text-sm'>{format(comment.createdAt)}</span>
+          <span className='text-gray-500 dark:text-gray-400 text-sm'>{format(comment.createdAt)}</span>
         </div>
 
         {user && (comment.user.username === user.username || isAdmin) && (

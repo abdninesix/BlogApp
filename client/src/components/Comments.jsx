@@ -45,7 +45,7 @@ const Comments = ({ postId }) => {
     <div className='flex flex-col gap-8 lg:w-3/5 mb-8'>
       <h1 className='text-xl'>Comments</h1>
       <form onSubmit={handleSubmit} className='w-full flex items-center justify-between gap-4'>
-        <textarea name='desc' placeholder='Write a comment...' className='rounded-xl p-2 w-full outline-none resize-none' />
+        <textarea name='desc' placeholder='Write a comment...' className='bg-white text-black rounded-xl p-2 w-full outline-none resize-none' />
         <button className='h-fit bg-myblue text-white font-medium rounded-full px-4 py-2'>Send</button>
       </form>
 

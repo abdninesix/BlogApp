@@ -59,9 +59,9 @@ const Write = () => {
 
   return (
     <div className='h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6 duration-200'>
-      <h1 className='text-2xl flex justify-center text-gray-600'>Create a new post</h1>
+      <h1 className='text-2xl flex justify-center'>Create a new post</h1>
       <form onSubmit={handleSubmit} className='flex flex-col flex-1 mb-8 gap-6'>
-        <input name='title' type="text" placeholder='Write your post title here...' className='bg-transparent text-4xl p-2 outline-none font-semibold' />
+        <input name='title' type="text" placeholder='Write title here...' className='bg-transparent text-4xl p-2 outline-none font-semibold' />
         <Upload type="image" setProgress={setProgress} setData={setCover}>
           <div className='w-fit bg-myblue disabled:bg-blue-300 text-white font-medium rounded-full px-4 py-2'>
             Cover photo
@@ -69,7 +69,7 @@ const Write = () => {
         </Upload>
         <div className='flex items-center gap-2'>
           <label>Choose a category:</label>
-          <select name="category" id="" className='p-1 outline-none rounded-xl'>
+          <select name="category" id="" className='bg-white text-black p-1 outline-none rounded-xl'>
             <option value='general'>General</option>
             <option value='web-design'>Web Design</option>
             <option value='development'>Development</option>
@@ -78,7 +78,7 @@ const Write = () => {
             <option value='marketing'>Marketing</option>
           </select>
         </div>
-        <textarea rows={3} name='desc' placeholder='Write a short description...' className='p-2 rounded-xl outline-none resize-none' />
+        <textarea rows={3} name='desc' placeholder='Write a short description...' className='bg-white text-black p-2 rounded-xl outline-none resize-none' />
         <div className='flex flex-1 flex-col gap-2'>
           <div className='flex gap-2'>
             <Upload type="image" setProgress={setProgress} setData={setImage}>🖼️</Upload>

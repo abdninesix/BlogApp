@@ -46,7 +46,7 @@ const PostList = () => {
   console.log(data)
 
   return (
-    <div>
+    <div className='mt-8'>
       <InfiniteScroll
         dataLength={allPosts.length} //This is important field to render the next data
         next={fetchNextPage}

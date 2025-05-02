@@ -24,7 +24,7 @@ const FeaturedPosts = () => {
   if (!posts || posts.length === 0) return
 
   return (
-    <div className='mt-8 flex flex-col lg:flex-row gap-8'>
+    <div className='flex flex-col lg:flex-row gap-8'>
       {/*First post*/}
       <div className='flex flex-col gap-4 w-full lg:w-1/2'>
         <div className='flex items-center gap-2'>

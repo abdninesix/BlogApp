@@ -8,7 +8,7 @@ const PostListPage = () => {
 
   return (
     <div className='flex flex-col gap-8 duration-200'>
-      <h1 className='flex justify-center text-2xl text-gray-600'>Blogs List</h1>
+      <h1 className='flex justify-center text-2xl'>Blogs List</h1>
       <button onClick={() => setOpen((prev) =>!prev)} className='md:hidden w-fit bg-myblue text-white font-medium rounded-full px-4 py-2'>{open ? "Close" : "Search or filter posts"}</button>
       <div className='flex flex-col-reverse md:flex-row justify-between gap-8'>
         <div>
