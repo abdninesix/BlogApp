@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 const MainLayout = () => {
   return (
-    <div className='px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40'>
+    <div className='px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 duration-200'>
         <Navbar/>
         <Outlet/>
     </div>
