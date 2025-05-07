@@ -43,6 +43,7 @@ const Upload = ({ children, type, setProgress, setData }) => {
             <IKContext publicKey={import.meta.env.VITE_IK_PUBLIC_KEY} urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT} authenticator={authenticator}>
                 <IKUpload
                     useUniqueFileName
+                    folder="bw/posts"
                     onError={onError}
                     onSuccess={onSuccess}
                     onUploadProgress={onUploadProgress}
