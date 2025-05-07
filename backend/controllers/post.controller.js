@@ -145,6 +145,49 @@ const imageKit = new ImageKit({
     urlEndpoint: process.env.IK_URL_ENDPOINT,
 })
 
+// export const shareAction = async (formData, settings) => {
+//     const file = formData.get("file");
+  
+//     if (!file || typeof file.arrayBuffer !== "function") {
+//       throw new Error("Invalid or missing file.");
+//     }
+  
+//     const bytes = await file.arrayBuffer();
+//     const buffer = Buffer.from(bytes);
+  
+//     const transformation =
+//       "w-600, " +
+//       (settings.type === "square"
+//         ? "ar-1-1"
+//         : settings.type === "wide"
+//         ? "ar-16-9"
+//         : "");
+  
+//     imageKit.upload(
+//       {
+//         file: buffer,
+//         fileName: file.name,
+//         folder: "bw/posts",
+//         ...(file.type.includes("image") && {
+//           transformation: {
+//             pre: transformation,
+//           },
+//         }),
+//         customMetadata: {
+//           sensitive: settings.sensitive,
+//         },
+//       },
+//       function (error, result) {
+//         if (error) {
+//           console.log("Upload error:", error);
+//         } else {
+//           console.log("Upload success:", result);
+//         }
+//       }
+//     );
+//   };
+  
+
 export const uploadAuth = async (req, res) => {
     const result = imageKit.getAuthenticationParameters()
     res.send(result)
